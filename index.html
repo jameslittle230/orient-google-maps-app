@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+    <title>Bowdoin Orient Google Maps Test Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        .article {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .title,
+        .subtitle {
+            text-align: center;
+        }
+
+        .subtitle {
+            font-style: italic;
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+
+        .maps-bubble-content {
+            font-family: Arial;
+            width: 500px;
+            position: relative;
+        }
+
+        .maps-bubble-content img {
+            float: left;
+            max-height: 100px;
+            margin-right: 10px;
+        }
+
+        .maps-bubble-blurb h1 {
+            margin-top: 0;
+            margin-bottom: 0.3em;
+        }
+
+        .maps-button-exterior {
+            background-color: #FFF;
+            border: 2px solid #FFF;
+            border-radius: 3px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .maps-button-exterior-bottom {
+            cursor: default;
+        }
+
+        .maps-button-interior {
+            color: rgb(25, 25, 25);
+            font-size: 32px;
+            line-height: 76px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: sans-serif;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .maps-button-interior-center {
+            color: rgb(25, 25, 25);
+            font-size: 16px;
+            line-height: 32px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .maps-button-interior-bottom {
+            color: rgb(25, 25, 25);
+            font-size: 22px;
+            line-height: 32px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .maps-button-interior-bottom span {
+            margin: 0 5px;
+        }
+
+        .pip:hover {
+            color: hsl(0, 0%, 0%);
+            cursor: pointer;
+        }
+
+        .pip-inactive {
+            color: hsl(0, 0%, 50%);
+        }
+
+        .pip-active {
+            color: hsl(0, 0%, 20%);
+        }
+
+        .restaurant-title {
+            clear: both;
+        }
+
+        .restaurant-image {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        #loading {
+            text-align: center;
+        }
+
+        @media(max-width: 800px) {
+            #map {
+                display: none;
+            }
+
+            .map-link {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="article">
+        <h1 class="title">12 Restaurants Every Person Ever should Go To</h1>
+        <h2 class="subtitle">By the Bowdoin Orient</h2>
+
+        <noscript>This page needs Javascript in order to work properly. Please enable Javascript or access this page from a different web browser.</noscript>
+
+        <div id="loading"><img src="img/loading.gif" alt=""><br>Loading...</div>
+
+        <div id="map" style="opacity: 0;"></div>
+
+        <div id="content" style="display: none;"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQrGWxfspqdbeJG1Zei5FJ-DmpwmekHjI"
+        type="text/javascript"></script>
+        <script src="smooth-scroll.min.js"></script>
+        <script src="main.js"></script>
+    </div>
+
+</body>
+
+</html>
